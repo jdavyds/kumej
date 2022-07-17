@@ -1,0 +1,475 @@
+.hero {
+  padding: 0 150px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: top 50% left 100px, center;
+  background-image: url(./../assets/herobg1.png),
+    url(https://images-global.nhst.tech/image/bmNBeUgrU2tKdGdLUUxYNFd6Q09zM0wzY2YxRU12Q2I3b3E5RzI0MTczUT0=/nhst/binary/0b3b5b9b90cca9161f0936fdc022a01e);
+  background-size: 30% 80%, cover;
+  background-repeat: no-repeat;
+}
+.hero p {
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.hero button {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  width: fit-content;
+  background-color: #ff7806;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+.brief {
+  padding: 30px 100px;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e052b;
+}
+.brief h3 {
+  font-size: 25px;
+  margin: 20px;
+}
+.brief div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.brief nav {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.brief nav img {
+  margin: 10px;
+  height: 30px;
+  width: 30px;
+}
+.brief b {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.brief p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.about {
+  padding: 30px 100px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(./../assets/aboutbg.png);
+  background-size: 350px 250px;
+  background-position: top 0px right 0px;
+  background-repeat: no-repeat;
+}
+.about div {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./../assets/line.png);
+  background-size: 2px;
+  background-position: top 30% left 0px;
+  background-repeat: no-repeat;
+}
+.about div h3 {
+  font-size: 25px;
+  color: rgba(135, 7, 126, 1);
+}
+.about div p {
+  font-size: 17px;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+.about figure {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.about figure h3 {
+  display: none;
+}
+.about figure img {
+  width: 80%;
+  height: auto;
+}
+.products {
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.products h3 {
+  font-size: 25px;
+  margin: 20px;
+}
+.products div {
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  justify-content: space-between;
+}
+.products div nav {
+  background-color: rgba(252, 230, 246, 1);
+  padding: 30px;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.6;
+  border-radius: 10px;
+}
+.products div nav img {
+  margin: 10px;
+  height: 40px;
+  width: 40px;
+}
+.products div nav b {
+  font-size: 20px;
+  margin: 10px 0;
+  color: rgba(135, 7, 126, 1);
+}
+.products div nav p {
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: center;
+}
+.special {
+  padding: 30px 100px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.special div {
+  width: 50%;
+  padding: 20px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+.special div h3 {
+  font-size: 25px;
+  color: rgba(135, 7, 126, 1);
+}
+.special div p {
+  font-size: 17px;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+.special figure {
+  display: flex;
+  align-items: center;
+}
+.special figure h3 {
+  display: none;
+}
+.special figure img {
+  width: 100%;
+  height: auto;
+}
+.projects {
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects h3 {
+  font-size: 25px;
+  margin: 20px;
+}
+.projects div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  justify-content: space-between;
+}
+.projects div img {
+  border-radius: 10px;
+  margin: 10px 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.clients {
+  padding: 30px 100px;
+  margin: 50px 0;
+  background-color: rgba(255, 239, 251, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.clients h3 {
+  font-size: 25px;
+  margin: 20px;
+}
+.clients div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.clients div img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+.sub {
+  width: 70%;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: rgba(46, 5, 43, 1);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 1.6;
+  background-image: url(./../assets/subbg.png);
+  background-size: 100%;
+  background-position: bottom 0px left 10%;
+  background-repeat: no-repeat;
+}
+.sub img {
+  background-color: white;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+.sub b {
+  font-size: 22px;
+  margin: 10px 0;
+}
+.sub p {
+  font-size: 18px;
+}
+.sub label {
+  height: 50px;
+  width: 55%;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.sub input {
+  width: 100%;
+  height: 50px;
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  border: none;
+  padding: 0 20px;
+  font-size: 16px;
+}
+.sub button {
+  background: rgba(255, 120, 6, 1);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  width: fit-content;
+  padding: 10px 15px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 20px;
+}
+@media only screen and (max-width: 850px) {
+  .hero {
+    padding: 0 15px;
+    height: 100vw;
+    display: flex;
+    background-position: top 50% left 50%, center;
+    background-size: 70% 80%, cover;
+  }
+  .hero p {
+    font-size: 18px;
+  }
+  .hero p br {
+    display: none;
+  }
+  .hero button {
+    font-size: 15px;
+    width: fit-content;
+  }
+  .brief {
+    padding: 30px 15px;
+  }
+  .brief h3 {
+    font-size: 22px;
+  }
+  .brief div {
+    display: flex;
+    flex-direction: column;
+  }
+  .brief p {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .about {
+    padding: 10px 15px;
+    margin: 0;
+    flex-direction: column-reverse;
+    background-image: none;
+    background-size: 50% 200px;
+    background-position: top 0px right 0px;
+  }
+  .about div {
+    width: 100%;
+    padding: 0;
+    background-image: none;
+    background-size: 2px;
+    background-position: top 30% left 0px;
+    background-repeat: no-repeat;
+  }
+  .about div h3 {
+    display: none;
+  }
+  .about div p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .about figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .about figure h3 {
+    display: block;
+    font-size: 22px;
+    margin: 10px;
+    color: rgba(135, 7, 126, 1);
+  }
+  .about figure h3 br {
+    display: none;
+  }
+  .about figure img {
+    width: 100%;
+    height: auto;
+  }
+  .products {
+    padding: 0 15px;
+  }
+  .products h3 {
+    font-size: 22px;
+    margin: 10px;
+  }
+  .products div {
+    display: flex;
+    flex-direction: column;
+  }
+  .products div nav {
+    padding: 15px;
+    line-height: 1.4;
+  }
+  .products div nav img {
+    margin: 0px;
+    height: 30px;
+    width: 30px;
+  }
+  .products div nav b {
+    font-size: 18px;
+  }
+  .products div nav p {
+    font-size: 16px;
+  }
+  .special {
+    padding: 30px 15px;
+    margin: 20px 0;
+    flex-direction: column;
+  }
+  .special div {
+    width: 100%;
+    padding: 0px;
+    line-height: 1.4;
+  }
+  .special div h3 {
+    display: none;
+  }
+  .special div h3 br {
+    display: none;
+  }
+  .special div p {
+    font-size: 16px;
+  }
+  .special figure {
+    display: flex;
+    flex-direction: column;
+  }
+  .special figure h3 {
+    display: block;
+    font-size: 22px;
+    margin: 10px 0;
+    color: rgba(135, 7, 126, 1);
+  }
+  .special figure h3 br {
+    display: none;
+  }
+  .projects {
+    padding: 0 15px;
+  }
+  .projects h3 {
+    font-size: 22px;
+  }
+  .projects div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .clients {
+    padding: 15px 15px;
+  }
+  .clients h3 {
+    font-size: 22px;
+  }
+  .clients div {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .sub {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    line-height: 1.4;
+    background-size: 250%;
+    background-position: bottom 0px left 10px;
+  }
+  .sub img {
+    height: 40px;
+    width: 40px;
+    margin: 10px 0;
+  }
+  .sub b {
+    font-size: 20px;
+  }
+  .sub p {
+    font-size: 16px;
+  }
+  .sub label {
+    height: 40px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .sub input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 14px;
+  }
+  .sub button {
+    padding: 5px;
+    font-size: 14px;
+    right: 10px;
+  }
+}

@@ -1,0 +1,326 @@
+.hero {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-image: url(./../assets/aboutherobg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(126, 26, 126);
+  opacity: 0.5;
+}
+.hero h3 {
+  font-size: 30px;
+  color: white;
+  z-index: 33;
+}
+.about {
+  padding: 30px 100px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(./../assets/aboutbg.png);
+  background-size: 350px 250px;
+  background-position: top 0px right 0px;
+  background-repeat: no-repeat;
+}
+.about div {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./../assets/line.png);
+  background-size: 2px;
+  background-position: top 30% left 0px;
+  background-repeat: no-repeat;
+}
+.about div h3 {
+  font-size: 25px;
+  color: rgba(135, 7, 126, 1);
+}
+.about div p {
+  font-size: 17px;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+.about figure {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.about figure h3 {
+  display: none;
+}
+.about figure img {
+  width: 80%;
+  height: auto;
+}
+.history {
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.history h3 {
+  font-size: 25px;
+  margin: 20px;
+}
+.history nav {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+.history nav > img {
+  height: 100px;
+  position: absolute;
+  bottom: -30%;
+  transform: translateY(-50%);
+}
+.history nav div {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.history nav div b {
+  font-size: 20px;
+  color: rgba(255, 120, 6, 1);
+}
+.history nav div p {
+  font-size: 17px;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+.history nav figure {
+  width: auto;
+  height: 350px;
+  display: flex;
+  align-items: center;
+}
+.history nav figure img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+.clients {
+  padding: 30px 100px;
+  margin: 50px 0;
+  background-color: rgba(255, 239, 251, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.clients h3 {
+  font-size: 25px;
+  margin: 20px;
+}
+.clients div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.clients div img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+.statement {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 100px 30px 50%;
+  background-image: url(./../assets/missionbg.png);
+  background-size: 100% 100%;
+  background-position: top 30% left 0px;
+  background-repeat: no-repeat;
+}
+.statement b {
+  font-size: 20px;
+  color: rgba(255, 120, 6, 1);
+}
+.statement p {
+  font-size: 18px;
+  color: white;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+.team {
+  margin: 50px 0;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team h3 {
+  font-size: 25px;
+  margin: 20px;
+  color: rgba(135, 7, 126, 1);
+}
+.team div {
+  width: 100%;
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  justify-content: space-between;
+}
+.team div nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team div nav img {
+  width: 100%;
+  height: auto;
+}
+.team div nav p {
+  font-size: 18px;
+  text-align: center;
+  color: rgba(104, 98, 104, 1);
+  line-height: 1.4;
+  padding: 10px 0;
+  width: 100%;
+  border: 1px solid rgba(104, 98, 104, 0.5);
+}
+@media only screen and (max-width: 850px) {
+  .hero {
+    height: 100vw;
+    background-position: center;
+    background-size: cover;
+  }
+  .hero h3 {
+    font-size: 22px;
+  }
+  .about {
+    padding: 10px 15px;
+    margin: 0;
+    flex-direction: column-reverse;
+    background-image: none;
+    background-size: 50% 200px;
+    background-position: top 0px right 0px;
+  }
+  .about div {
+    width: 100%;
+    padding: 0;
+    background-image: none;
+    background-size: 2px;
+    background-position: top 30% left 0px;
+    background-repeat: no-repeat;
+  }
+  .about div h3 {
+    display: none;
+  }
+  .about div p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .about figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .about figure h3 {
+    display: block;
+    font-size: 22px;
+    margin: 10px;
+    color: rgba(135, 7, 126, 1);
+  }
+  .about figure h3 br {
+    display: none;
+  }
+  .about figure img {
+    width: 100%;
+    height: auto;
+  }
+  .history {
+    padding: 0 15px;
+  }
+  .history h3 {
+    font-size: 22px;
+  }
+  .history nav {
+    flex-direction: column;
+  }
+  .history nav > img {
+    height: 100px;
+    width: 5px;
+    margin: 10px auto;
+    position: unset;
+    bottom: unset;
+    transform: unset;
+    order: 3;
+  }
+  .history nav div {
+    width: 100%;
+    padding: 0;
+    order: 2;
+  }
+  .history nav div b {
+    font-size: 18px;
+  }
+  .history nav div p {
+    font-size: 16px;
+  }
+  .history nav figure {
+    width: 100%;
+    height: calc(100vw - 30px);
+  }
+  .history nav figure img {
+    width: 100%;
+    height: 100%;
+  }
+  .clients {
+    padding: 15px 15px;
+  }
+  .clients h3 {
+    font-size: 22px;
+  }
+  .clients div {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .statement {
+    height: fit-content;
+    padding: 30px 15px;
+    background-size: cover;
+    background-position: center;
+  }
+  .statement b {
+    font-size: 18px;
+  }
+  .statement p {
+    font-size: 16px;
+  }
+  .team {
+    margin: 20px 0;
+    padding: 0 15px;
+  }
+  .team h3 {
+    font-size: 22px;
+  }
+  .team div {
+    display: flex;
+    flex-direction: column;
+  }
+  .team div nav {
+    margin: 10px 0;
+  }
+  .team div nav p {
+    font-size: 16px;
+  }
+}

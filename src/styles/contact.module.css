@@ -1,0 +1,153 @@
+.main {
+  min-height: 90vh;
+  height: fit-content;
+  background-image: url(./../assets/contactbg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 50px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(126, 26, 126);
+  opacity: 0.2;
+}
+.main div {
+  z-index: 111;
+  width: 45%;
+}
+.main div p {
+  font-size: 25px;
+  margin: 20px 0;
+  text-transform: capitalize;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+}
+.main div p img {
+  margin-right: 10px;
+}
+.main div button {
+  font-size: 18px;
+  background: inherit;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 120, 6, 1);
+  color: white;
+  padding: 10px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main div button img {
+  margin-left: 10px;
+  height: 18px;
+  width: 18px;
+}
+.main form {
+  z-index: 111;
+  width: 40%;
+  height: auto;
+  padding: 20px 50px;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.main form h3 {
+  font-size: 22px;
+  margin: 20px 0;
+  text-transform: capitalize;
+  color: #063e0b;
+}
+.main form label {
+  position: relative;
+  margin: 20px 0;
+  height: 40px;
+  width: 100%;
+}
+.main form span {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  font-size: 13px;
+  z-index: 99;
+  padding: 2px;
+  background: #f3f3f3;
+  color: #565a5c;
+}
+.main label input,
+.main label select {
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+  border-radius: 5px;
+  border: 1px solid rgba(61, 52, 12, 1);
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  color: #565a5c;
+}
+.main form button {
+  border: none;
+  outline: none;
+  background-color: rgba(255, 120, 6, 1);
+  color: white;
+  padding: 10px;
+  width: fit-content;
+}
+@media only screen and (max-width: 850px) {
+  .main {
+    min-height: unset;
+    background-image: unset;
+    padding: 20px 0;
+    flex-direction: column;
+  }
+  .main::before {
+    background-color: unset;
+  }
+  .main div {
+    width: 100%;
+    padding: 100px 15px;
+    background-position: center;
+    background-image: url(./../assets/contactbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .main div p {
+    font-size: 18px;
+  }
+  .main div button {
+    font-size: 15px;
+  }
+  .main div button img {
+    height: 15px;
+    width: 15px;
+  }
+  .main form {
+    width: 90%;
+    height: fit-content;
+    padding: 15px;
+    border-radius: 15px;
+    transform: translateY(-70px);
+  }
+  .main form h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .main form label {
+    margin: 15px 0;
+  }
+  .main form button {
+    margin: 10px 0;
+  }
+}
