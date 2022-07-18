@@ -305,15 +305,21 @@
     padding: 30px 15px;
   }
   .brief h3 {
-    font-size: 22px;
+    display: none;
   }
   .brief div {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+  }
+  .brief b {
+    font-size: 18px;
   }
   .brief p {
-    width: 100%;
-    margin: 10px 0;
+    display: none;
+  }
+  .brief nav img:last-of-type {
+    display: none;
   }
   .about {
     padding: 10px 15px;
@@ -434,8 +440,16 @@
   }
   .clients div {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
     overflow-x: scroll;
-  }
+}
+.clients div img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
   .sub {
     width: 100%;
     padding: 15px;

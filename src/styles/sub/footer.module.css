@@ -34,6 +34,10 @@
 .main > nav h3 {
   font-size: 25px;
 }
+.main > nav ul {
+  display: flex;
+  flex-direction: column;
+}
 .main > nav a {
   text-decoration: none;
   margin: 10px 0;
@@ -80,25 +84,33 @@
     flex-direction: column;
   }
   .main div:first-of-type img {
-    height: 40px;
+    height: 60px;
   }
   .main div:first-of-type p {
-    font-size: 16px;
+    font-size: 15px;
   }
   .main div:first-of-type p br {
     display: none;
   }
   .main > nav {
-    margin: 10px 0; 
+    margin: 10px 0;
+    flex-wrap: wrap;
   }
   .main > nav h3 {
-    font-size: 22px;
+    font-size: 18px;
+  }
+  .main > nav ul {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
   }
   .main > nav a {
-    font-size: 16px;
+    font-size: 15px;
   }
   .main div:last-of-type nav {
-    font-size: 16px;
+    font-size: 15px;
+    margin: 10px 0;
   }
   .main div:last-of-type nav img {
     margin: 0 10px 0 0;

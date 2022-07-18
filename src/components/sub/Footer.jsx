@@ -23,11 +23,13 @@ export default function Footer() {
         </div>
         <nav>
           <h3>Links</h3>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/product-and-services">Product & Services</Link>
-          <Link to="/contact-us">Contact Us</Link>
-          <Link to="/">Blog</Link>
+          <ul>
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/product-and-services">Product & Services</Link>
+            <Link to="/contact-us">Contact Us</Link>
+            <Link to="/">Blog</Link>
+          </ul>
         </nav>
         <div>
           <nav>

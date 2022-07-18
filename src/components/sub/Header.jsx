@@ -10,8 +10,18 @@ export default function Header() {
   function handleShow() {
     setHamNav(!hamNav);
   }
+  const [sticky, setSticky] = useState(false);
+  function handleScroll(e) {
+    if (window.scrollY > 130) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  }
+  window.addEventListener("scroll", handleScroll);
+
   return (
-    <header className={style.header}>
+    <header className={sticky ? style.sticky : style.header}>
       <img src={logo} alt="" />
       <nav className={hamNav ? style.show : ""}>
         <NavLink to="/" onClick={handleShow}>
